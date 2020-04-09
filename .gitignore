@@ -1,7 +1,6 @@
 .docker/docker-compose.yml
 .docker/.env
 .env
-.env.test
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
