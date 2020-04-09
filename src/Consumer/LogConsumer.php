@@ -20,6 +20,7 @@ class LogConsumer implements ConsumerInterface
         $log = new Logger('log');
         $log->pushHandler(new StreamHandler(__DIR__.'/../../var/log/rabbitmq.log', Logger::DEBUG));
 
+        //TODO: Create logging with json logic, set json format to log and parse error priority and other fields
         $log->log(Logger::ERROR, $msg->body);
     }
 }
